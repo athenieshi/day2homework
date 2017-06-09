@@ -10,7 +10,7 @@ function handleSubmit(ev) {
   const details = document.querySelector('#details')
   const artist= {name: form.artistName.value, genre: form.artistGenre.value}
   details.prepend(renderList(artist))
-
+  
 }
 
 function renderListItem(label, value) {
@@ -21,14 +21,24 @@ function renderListItem(label, value) {
 }
 
 function renderList(personData) {
+
   const list = document.createElement('ul')
-  
+  const deleteButton = document.createElement("button");
+
+  deleteButton.addEventListener('click', handleDelete)
+
   Object.keys(personData).map(function(label) {
     const item = renderListItem(label, personData[label])
     list.appendChild(item)
+    list.appendChild(deleteButton)
   })
 
   return list
+}
+
+
+function handleDelete(ev) {
+  
 }
 
 
