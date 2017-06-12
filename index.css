@@ -1,9 +1,12 @@
-body {
-    font-family: Arial, Helvetica, sans-serif
+.template {
+    visibility: hidden;
 }
 
-deleteButton {
-    width: 10px
-    height: 10px
-
+.actions {
+    float: right;
 }
+
+.artist {
+    clear:both;
+}
+

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
   <head>
     <title>Bands</title>
     <link rel="stylesheet" href="index.css">
   </head>
-  <body style="background-color: #0066cc">
+  <body style="background-color: #cce6ff">
     <h1>Favorite artists:</h1>
     <section>
         <form id="artistForm">
@@ -22,6 +22,64 @@
         </form>
         <div id="details"></div>
     </section>
+    <script src="index.js"></script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bands</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body style="background-color: #cce6ff">
+    <div class="row">
+      <div class="medium-8 medium-offset-2 column">
+        <h1>Bands</h1>
+        <form id="artist-form">
+          <div class="input-group">
+            <input type="text"  class="input-group-field" name="artistName" placeholder="Name an artist" autofocus required
+            >
+            <div class="input-group-button">
+              <button class="button success" type="submit" >
+                Add artist 
+              </button>
+            </div>
+          </div>
+           <div class="input-group">
+            <input type="text"  class="input-group-field" name="artistGenre" placeholder="Genre of the artist" autofocus required
+            >
+            <div class="input-group-button">
+              <button class="button success" type="submit" >
+                Add artist genre
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-8 medium-offset-2 column">
+            <ul id="artist-list" class="no-bullet">
+                <li class="artist template">
+                  <span class="artist-name">Chance</span>
+                  <span class="artist-genre">Hiphop</span>
+                  <span class ="actions button-group">
+            
+                    <button class = "fave button">Fave</button>
+                   <button class="remove button alert">Remove</button>
+                  </span>
+                </li>
+            </ul>
+        </div>
+    <div>
+
     <script src="index.js"></script>
   </body>
 </html>
